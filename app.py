@@ -4,6 +4,7 @@ import re
 import nltk
 from nltk.stem.porter import PorterStemmer
 from nltk.corpus import stopwords
+nltk.download('stopwords', download_dir='/opt/render/nltk_data')
 stopwords_set = set(stopwords.words('english'))
 emoticon_pattern = re.compile('(?::|;|=)(?:-)?(?:\)|\(|D|P)')
 
